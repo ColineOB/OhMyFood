@@ -1,0 +1,27 @@
+/** breakpoints **/
+/** color **/
+/** font **/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 30px 20px;
+}
+
+.logo-header {
+  margin: auto;
+  width: 50%;
+}
+
+a {
+  position: absolute;
+}
+
+h1 {
+  color: #9356DC;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvdXRpbHMvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vc2Fzcy9sYXlvdXQvX2hlYWRlci5zY3NzIiwic3R5bGUuY3NzIiwiLi4vc2Fzcy9tYWluLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsa0JBQUE7QUFLQSxZQUFBO0FBS0EsV0FBQTtBQ0hBO0VBQ0ksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSxzQkFBQTtBQ0hKOztBREtBO0VBQ1EsWUFBQTtFQUNBLFVBQUE7QUNGUjs7QURJQTtFQUNJLGtCQUFBO0FDREo7O0FDWkE7RUFDSSxjSEVZO0VHRFosK0JBQUE7VUFBQSx1QkFBQTtFQUNBLGVBQUE7QURlSiIsImZpbGUiOiJwcmVmaXhlZCJ9 */

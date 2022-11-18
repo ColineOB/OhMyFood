@@ -1,4 +1,24 @@
-h1 {
-    color: blue;
-    background-color: brown;
+/** breakpoints **/
+/** color **/
+/** font **/
+header {
+  display: flex;
+  margin: 20px 30px 20px;
 }
+
+.logo-header {
+  margin: auto;
+  width: 50%;
+}
+
+a {
+  position: absolute;
+}
+
+h1 {
+  color: #9356DC;
+  text-decoration: dashed;
+  font-size: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

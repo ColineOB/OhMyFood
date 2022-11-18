@@ -1,0 +1,8 @@
+@import "./utils/variables";
+@import "./layout/header";
+    
+h1 {
+    color: $color-primary;
+    text-decoration: dashed;
+    font-size: 50px;
+}

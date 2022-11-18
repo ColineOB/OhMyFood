@@ -1,0 +1,55 @@
+@import "../utils/variables";
+@import "../utils/functions";
+@import "../utils/mixins";
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    margin: 20px 30px 20px;
+}
+
+.logo-header {
+    margin: auto;
+    width: 50%;
+}
+
+.location {
+    align-items: center;
+    background-color: lightness-shift($white, 10%);
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    p {
+        color: lightness-shift($black, 15%);
+        font-family: $font-text;
+        i {
+            margin-right: 10px;
+        }
+    }
+}
+
+.reservation {
+    text-align: center;
+    font-family: $font-text;
+    background-color: lightness-shift($white, 5%);
+
+    &__title {
+        margin: 30px 50px 10px 50px;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    &__description {
+        margin: 0 20px 40px 20px;
+        font-size: 20px;
+
+    }
+    a {
+        color: $white;
+        background: linear-gradient($color-secondary,$color-primary);
+        border-radius: 50px;
+        padding: 15px;
+    }
+}

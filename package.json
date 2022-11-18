@@ -1,0 +1,21 @@
+{
+  "name": "colinegideon.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "sass": "sass --watch ./sass/main.scss:./css/style.css ./sass/pages/home.scss:./css/home.css",
+   "prefix": "postcss ./css/style.css --use autoprefixer -o ./css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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1~@github.com/ColineOB/ColineOB.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/ColineOB/ColineOB.github.io/issues"
+  },
+  "homepage": "https://github.com/ColineOB/ColineOB.github.io#readme"
+}
