@@ -3,6 +3,7 @@
 /** font **/
 body {
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -13,6 +14,12 @@ header {
 .logo-header {
   margin: auto;
   width: 50%;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 0.5em;
 }
 
 .location {
@@ -54,12 +61,88 @@ header {
 }
 
 .functioning {
-  font-family: "Roboto", sans-serif;
+  margin-bottom: 3em;
 }
-.functioning h1 {
+.functioning-cart {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin: 0 1em 1.5em 2em;
+  border-radius: 20px;
+  height: 4em;
+}
+.functioning-cart__number {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 1.5em;
+  justify-content: center;
+  background-color: #9356DC;
+  color: #fff;
+  height: 1.5em;
+  width: 1.5em;
+  border-radius: 50px;
+}
+.functioning-cart i {
+  color: gray;
+  margin-left: 2.5em;
+}
+.functioning-cart__description {
   font-weight: bold;
-  font-size: 30px;
-  margin-left: 0.5em;
+  margin-left: 1.5em;
+}
+
+main {
+  background-color: #f2f2f2;
+  padding: 2em 0 2.5em 0;
+}
+main .restaurants-cart {
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 0 1em 1em 1em;
+}
+main .restaurants-cart__new {
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+  background-color: #99E2D0;
+  color: #2c9c81;
+  font-weight: bold;
+  position: absolute;
+  right: 2em;
+  margin-top: 1em;
+}
+main .restaurants-cart img {
+  border-radius: 20px 20px 0px 0px;
+  height: 80%;
+  height: 10em;
+  width: 100%;
+  object-fit: cover;
+}
+main .restaurants-cart h2 {
+  margin: 0.4em 0 0 0.5em;
+}
+main .restaurants-cart p {
+  margin: 0.2em 0 0 0.8em;
+}
+main .restaurants-cart i {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 2em;
+  right: 2em;
+}
+
+footer {
+  background-color: #333333;
+  color: #fff;
+  padding: 2em 0 1em 1em;
+}
+footer .logo-footer path {
+  fill: #fff;
+}
+footer i {
+  margin-right: 0.7em;
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    font-family: $font-text;
 }
 
 header {
@@ -16,9 +17,15 @@ header {
     width: 50%;
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 0.5em;
+}
+
 .location {
     align-items: center;
-    background-color: lightness-shift($white, 10%);
+    background-color: darkness-shift($white, 10%);
     display: flex;
     height: 40px;
     justify-content: center;
@@ -34,7 +41,7 @@ header {
 .reservation {
     text-align: center;
     font-family: $font-text;
-    background-color: lightness-shift($white, 5%);
+    background-color: darkness-shift($white, 5%);
     padding-bottom: 60px;
 
     &__title {
@@ -57,10 +64,91 @@ header {
 }
 
 .functioning {
-    font-family: $font-text;
-    h1 {
-        font-weight: bold;
-        font-size: 30px;
-        margin-left: 0.5em;
+    margin-bottom: 3em;
+    &-cart {
+        display: flex;
+        align-items: center;
+        background-color: darkness-shift($white, 5%);
+        margin: 0 1em 1.5em 2em;
+        border-radius: 20px;
+        height: 4em;
+
+        &__number {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 1.5em;
+            justify-content: center;
+            background-color: $color-primary;
+            color: $white;
+            height: 1.5em;
+            width: 1.5em;
+            border-radius: 50px;
+        }
+
+        i {
+            color: lightness-shift($black, 50%);
+            margin-left: 2.5em;
+        }
+
+        &__description {
+            font-weight: bold;
+            margin-left: 1.5em;
+        }
+    }
+}
+
+main {
+    background-color: darkness-shift($white, 5%);
+    padding: 2em 0 2.5em 0;
+    .restaurants-cart {
+        border-radius: 20px;
+        background-color: $white;
+        margin: 0 1em 1em 1em;
+        &__new {
+            display: flex;
+            align-items: center;
+            padding: 0.5em;
+            background-color: $color-tertiary;
+            color: darkness-shift($color-tertiary, 35%);
+            font-weight: bold;
+            position: absolute;
+            right: 2em;
+            margin-top: 1em;
+        }
+         img {     
+            border-radius: 20px 20px 0px 0px;
+            height: 80%;
+            height: 10em;
+            width: 100%;
+            object-fit: cover;
+         }
+         h2 {
+            margin: 0.4em 0 0 0.5em;
+         }
+         p {
+            margin: 0.2em 0 0 0.8em;
+         }
+         i {
+            display: flex;
+            justify-content: right;
+            position: relative;
+            bottom: 2em;
+            right: 2em;
+         }
+    }
+}
+
+footer {
+    background-color: lightness-shift($black, 20%);
+    color: $white;
+    padding: 2em 0 1em 1em;
+    .logo-footer {
+        path {
+            fill: $white;
+        }
+    }
+    i {
+        margin-right: 0.7em;
     }
 }

@@ -1,0 +1,13 @@
+footer {
+    background-color: lightness-shift($black, 20%);
+    color: $white;
+    padding: 2em 0 1em 1em;
+    .logo-footer {
+        path {
+            fill: $white;
+        }
+    }
+    i {
+        margin-right: 0.7em;
+    }
+}

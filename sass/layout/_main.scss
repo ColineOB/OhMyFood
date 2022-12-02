@@ -1,0 +1,24 @@
+main {
+    position: relative;
+    z-index: 2;
+    border-radius: 25px 25px 0 0;
+    background-color: darkness-shift($white, 5%);
+    padding: 2em 0 2em 0;
+    h1 {
+        font-family: $font-title;
+        font-size: 1.5em;
+        font-weight: lighter;
+        margin: 0 0 0 0.8em;
+        i {
+            margin-left: 1.5em;
+        }
+    }
+    .menu {
+        &-title {
+            text-transform: uppercase;
+            font-weight: lighter;
+            color: lightness-shift($black, 15%);
+            margin-left: 0.5em;
+        }
+    }
+}
