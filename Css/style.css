@@ -11,8 +11,34 @@ img {
 
 .menu-dish {
   background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1em 1em 1em;
+}
+.menu-dish_text {
+  margin-left: 0.5em;
+}
+.menu-dish_text h3 {
+  margin: 0.5em 0 0 0;
+}
+.menu-dish_text p {
+  margin: 0.2em 0 0.5em 0;
+}
+.menu-dish p {
+  align-self: flex-end;
+  margin: 0 1em 0.5em 0;
+}
+
+.button {
+  background: linear-gradient(#FF79DA, #9356DC);
+  border: none;
   border-radius: 25px;
-  margin: 0 1em 0 1em;
+  color: #fff;
+  display: block;
+  margin: 2.5em auto 0.3em auto;
+  padding: 1em 3em;
+  text-align: center;
 }
 
 header {
@@ -46,10 +72,18 @@ main h1 i {
   margin-left: 1.5em;
 }
 main .menu-title {
+  margin-left: 0.8em;
+}
+main .menu-title_text {
   text-transform: uppercase;
   font-weight: lighter;
   color: #262626;
-  margin-left: 0.5em;
+  margin: 1em 0 0.2em 0;
+}
+main .menu-title_underline {
+  width: 3em;
+  border-top: 0.3em solid #99E2D0;
+  margin-bottom: 1em;
 }
 
 footer {

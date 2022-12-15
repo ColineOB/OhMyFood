@@ -15,10 +15,18 @@ main {
     }
     .menu {
         &-title {
-            text-transform: uppercase;
-            font-weight: lighter;
-            color: lightness-shift($black, 15%);
-            margin-left: 0.5em;
+            margin-left: 0.8em;
+            &_text {
+                text-transform: uppercase;
+                font-weight: lighter;
+                color: lightness-shift($black, 15%);
+                margin: 1em 0 0.2em 0;
+            }
+            &_underline {
+                width: 3em;
+                border-top: 0.3em solid $color-tertiary;
+                margin-bottom: 1em;
+            }
         }
     }
 }

@@ -1,5 +1,20 @@
 .menu-dish {
     background-color: $white;
-    border-radius: 25px;
-    margin: 0 1em 0 1em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1em 1em 1em;
+    &_text {
+        margin-left: 0.5em;
+        h3 {
+            margin: 0.5em 0 0 0;
+        }
+        p {
+            margin: 0.2em 0 0.5em 0;
+        }
+    }
+    p {
+        align-self: flex-end;
+        margin: 0 1em 0.5em 0;
+    }
 }
