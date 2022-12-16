@@ -14,7 +14,12 @@ main {
         }
     }
     .menu {
-        &-title {
+        @include ordinateur-only {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .menu-title {
             margin-left: 0.8em;
             &_text {
                 text-transform: uppercase;
@@ -29,4 +34,3 @@ main {
             }
         }
     }
-}

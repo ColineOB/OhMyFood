@@ -1,6 +1,7 @@
 @import "../utils/variables";
 @import "../utils/functions";
 @import "../utils/mixins";
+@import "../components/button";
 
 body {
     margin: 0;
@@ -15,6 +16,9 @@ header {
 .logo-header {
     margin: auto;
     width: 50%;
+    @include ordinateur-only {
+        width: 20%;
+    }
 }
 
 h1 {
@@ -55,24 +59,29 @@ h1 {
         font-size: 20px;
 
     }
-    a {
-        color: $white;
-        background: linear-gradient($color-secondary,$color-primary);
-        border-radius: 50px;
-        padding: 15px;
-    }
 }
 
 .functioning {
     margin-bottom: 3em;
+    @include ordinateur-only {
+        display: flex;
+        justify-content: center;
+        margin: 2em 0 1em 0;
+    }
+    h1 {
+    @include ordinateur-only {
+        font-size: 1.5em;
+        margin-right: 2em;
+    }
+    }
     &-cart {
+        @include box-shadow(15%);
         display: flex;
         align-items: center;
         background-color: darkness-shift($white, 5%);
         margin: 0 1em 1.5em 2em;
         border-radius: 20px;
         height: 4em;
-
         &__number {
             display: flex;
             align-items: center;
@@ -84,6 +93,10 @@ h1 {
             height: 1.5em;
             width: 1.5em;
             border-radius: 50px;
+            @include ordinateur-only {
+               position: relative;
+               margin-left: -2em;
+            }
         }
 
         i {
@@ -94,6 +107,15 @@ h1 {
         &__description {
             font-weight: bold;
             margin-left: 1.5em;
+            @include ordinateur-only {
+               margin-right: 1em;
+            }
+        }
+    }
+    .active {
+        background-color: lightness-shift($color-primary, 35%);
+        i {
+            color: $color-primary;
         }
     }
 }
@@ -101,7 +123,26 @@ h1 {
 main {
     background-color: darkness-shift($white, 5%);
     padding: 2em 0 2.5em 0;
+    @include tablette-only {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        @include tablette-only {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+    }
     .restaurants-cart {
+        @include tablette-only {
+            width: 40%;
+            align-items: center
+        }
+        @include box-shadow(15%);
         border-radius: 20px;
         background-color: $white;
         margin: 0 1em 1em 1em;
@@ -115,6 +156,10 @@ main {
             position: absolute;
             right: 2em;
             margin-top: 1em;
+            @include tablette-only {
+                right: auto;
+                margin-left: 32%;
+            }
         }
          img {     
             border-radius: 20px 20px 0px 0px;

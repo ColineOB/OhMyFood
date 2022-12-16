@@ -5,4 +5,8 @@ img {
     width: 100%;
     object-fit: cover;
     margin-bottom: -2em;
+    @include tablette-only {
+        margin-bottom: -40%;
+    }
+
 }

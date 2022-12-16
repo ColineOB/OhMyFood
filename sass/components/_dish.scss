@@ -1,4 +1,9 @@
 .menu-dish {
+    @include ordinateur-only {
+        width: 100%;
+        padding: 1em;
+    }
+    @include box-shadow(10%);
     background-color: $white;
     border-radius: 10px;
     display: flex;
