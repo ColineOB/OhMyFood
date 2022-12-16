@@ -2,6 +2,7 @@
 @import "../utils/functions";
 @import "../utils/mixins";
 @import "../components/button";
+@import "../components/loader";
 
 body {
     margin: 0;
@@ -25,6 +26,11 @@ h1 {
     font-weight: bold;
     font-size: 30px;
     margin-left: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
 }
 
 .location {
