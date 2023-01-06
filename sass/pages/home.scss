@@ -3,6 +3,7 @@
 @import "../utils/mixins";
 @import "../components/button";
 @import "../components/loader";
+@import "../components/heart";
 
 body {
     margin: 0;
@@ -180,13 +181,28 @@ main {
          p {
             margin: 0.2em 0 0 0.8em;
          }
-         i {
+         .heart {
             display: flex;
             justify-content: right;
             position: relative;
             bottom: 2em;
             right: 2em;
-         }
+            .fa-regular {
+                position: absolute;
+            }
+            
+            .fa-solid {
+                z-index: 1;
+                background: -webkit-linear-gradient($color-secondary,$color-primary);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                opacity: 0;
+                transition: opacity 300ms;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
     }
 }
 

@@ -18,6 +18,42 @@ main {
             display: flex;
             justify-content: space-between;
         }
+        &--starter {
+            animation: opacity 1s;
+            animation-fill-mode: backwards;
+            @keyframes opacity {
+                0% {
+                    opacity:0;
+                }
+                100% {
+                    opacity:1;
+                }
+            }
+        }
+        &--main {
+            animation: opacity 1s 0.2s;
+            animation-fill-mode: backwards;
+            @keyframes opacity {
+                0% {
+                    opacity:0;
+                }
+                100% {
+                    opacity:1;
+                }
+            }
+        }
+        &--desserts {
+            animation: opacity 1s 0.4s;
+            animation-fill-mode: backwards;
+            @keyframes opacity {
+                0% {
+                    opacity:0;
+                }
+                100% {
+                    opacity:1;
+                }
+            }
+        }
     }
     .menu-title {
             margin-left: 0.8em;
