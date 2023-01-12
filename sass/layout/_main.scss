@@ -1,22 +1,45 @@
 main {
+    @include tablette-only {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
     position: relative;
     z-index: 2;
     border-radius: 25px 25px 0 0;
     background-color: darkness-shift($white, 5%);
     padding: 2em 0 2em 0;
-    h1 {
-        font-family: $font-title;
-        font-size: 1.5em;
-        font-weight: lighter;
-        margin: 0 0 0 0.8em;
-        i {
-            margin-left: 1.5em;
-        }
-    }
-    .menu {
-        @include ordinateur-only {
+        @include tablette-only {
             display: flex;
-            justify-content: space-between;
+            flex-flow: column;
+            justify-content: center;
+        }
+        h1 {
+            @include tablette-only {
+                display: block;
+            }
+            font-family: $font-title;
+            font-size: 1.5em;
+            font-weight: lighter;
+            margin: 0 0 0 0.8em;
+            .heart {
+                
+                bottom: 29px;
+                @include tablette-only {
+                    left: 15%;
+                }
+            }
+        }
+    .menu {
+        &--starter, &--main, &--desserts {
+            @include tablette-only {
+                display: flex;
+                flex-flow: wrap;
+                justify-content: center;
+                padding: 1em;
+                width: 100%;
+            }
         }
         &--starter {
             animation: opacity 1s;

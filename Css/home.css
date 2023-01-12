@@ -56,6 +56,28 @@
   }
 }
 
+.heart {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 2em;
+  right: 2em;
+}
+.heart .fa-regular {
+  position: absolute;
+}
+.heart .fa-solid {
+  z-index: 1;
+  background: -webkit-linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.heart .fa-solid:hover {
+  opacity: 1;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -243,27 +265,6 @@ main .restaurants-cart h2 {
 }
 main .restaurants-cart p {
   margin: 0.2em 0 0 0.8em;
-}
-main .restaurants-cart .heart {
-  display: flex;
-  justify-content: right;
-  position: relative;
-  bottom: 2em;
-  right: 2em;
-}
-main .restaurants-cart .heart .fa-regular {
-  position: absolute;
-}
-main .restaurants-cart .heart .fa-solid {
-  z-index: 1;
-  background: -webkit-linear-gradient(#FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  opacity: 0;
-  transition: opacity 300ms;
-}
-main .restaurants-cart .heart .fa-solid:hover {
-  opacity: 1;
 }
 
 footer {

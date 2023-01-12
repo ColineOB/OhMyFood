@@ -1,12 +1,13 @@
 
-img {
+.image {
     position: relative;
     z-index: 1;
     width: 100%;
+    height: 15em;
     object-fit: cover;
     margin-bottom: -2em;
     @include tablette-only {
-        margin-bottom: -40%;
+        height: 20em;
     }
 
 }
