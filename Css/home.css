@@ -78,6 +78,11 @@
   opacity: 1;
 }
 
+html {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -237,8 +242,6 @@ main .restaurants-cart {
   }
 }
 main .restaurants-cart__new {
-  display: flex;
-  align-items: center;
   padding: 0.5em;
   background-color: #99E2D0;
   color: #2c9c81;
@@ -250,7 +253,7 @@ main .restaurants-cart__new {
 @media screen and (min-width: 768px) {
   main .restaurants-cart__new {
     right: auto;
-    margin-left: 32%;
+    margin: 1em;
   }
 }
 main .restaurants-cart img {

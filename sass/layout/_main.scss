@@ -23,12 +23,13 @@ main {
             font-size: 1.5em;
             font-weight: lighter;
             margin: 0 0 0 0.8em;
-            .heart {
-                
-                bottom: 29px;
-                @include tablette-only {
-                    left: 15%;
-                }
+        }
+        .heart {
+            font-size: 1.5em;
+            font-weight: lighter;
+            bottom: 29px;
+            @include tablette-only {
+                left: 6em;
             }
         }
     .menu {

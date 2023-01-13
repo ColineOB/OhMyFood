@@ -5,6 +5,12 @@
 @import "../components/loader";
 @import "../components/heart";
 
+
+html {
+    margin:    0 auto;
+    max-width: 1440px;
+}
+
 body {
     margin: 0;
     font-family: $font-text;
@@ -154,8 +160,6 @@ main {
         background-color: $white;
         margin: 0 1em 1em 1em;
         &__new {
-            display: flex;
-            align-items: center;
             padding: 0.5em;
             background-color: $color-tertiary;
             color: darkness-shift($color-tertiary, 35%);
@@ -165,7 +169,7 @@ main {
             margin-top: 1em;
             @include tablette-only {
                 right: auto;
-                margin-left: 32%;
+                margin: 1em;
             }
         }
          img {     
